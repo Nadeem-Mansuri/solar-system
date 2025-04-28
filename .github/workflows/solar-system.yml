@@ -47,7 +47,8 @@ jobs:
 
     code-coverage:
         name: Code Coverage
-        strategy: 
+        strategy:
+          fail-fast: false 
           matrix:
             nodejs_version: [18, 19, 20]
             operating_system: [ubuntu-latest, macos-latest]
